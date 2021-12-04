@@ -9,6 +9,7 @@ sap.ui.define([
 		formatter: formatter,
 
 		onInit: function () {
+			//Methode aussen oder innen?
 			window.addEventListener("message", receivePostMessage2, false);
 		},
 
