@@ -8,9 +8,24 @@
 		id="page"
 		title="{i18n>title}">
 		<content>
-			<Button text="Press Me. I am a SAPUI5 Button"/>
-      		<html:button>No, press me. I am native HTML Button.</html:button>
-			<html:iframe  src="https://conet-business.eu10.hcs.cloud.sap/sap/fpa/ui/tenants/f491c/bo/application/90ECA2F94038BB645CFA6163A14DD623?mode=present" height ="400px" width="100%"> </html:iframe>
+
+			<IconTabBar>
+				<items>
+					<IconTabFilter
+						text="SAC Embedding"
+						key="sac">
+						<Button text="Press Me. I am a SAPUI5 Button"/>
+      					<html:button>No, press me. I am native HTML Button.</html:button>
+						<html:iframe  src="https://conet-business.eu10.hcs.cloud.sap/sap/fpa/ui/tenants/f491c/bo/application/90ECA2F94038BB645CFA6163A14DD623?mode=present" height ="400px" width="100%"> </html:iframe>
+					</IconTabFilter>
+					<IconTabFilter
+						text="Lumira Embedding"
+						key="lumira">
+						
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			
 		</content>
 	</Page>
 </mvc:View>
