@@ -21,7 +21,7 @@
 					<IconTabFilter
 						text="Lumira Embedding"
 						key="lumira">
-						
+						<html:iframe  src="http://localhost:57592/aad/zen?APPLICATION=Embedding.lumx%21APPLICATION&amp;amp;PRELOAD_M_LIB=X&amp;amp;designersessionid=10360dc60ffc49ba8d4464c8774efee1" height ="700px" width="100%"> </html:iframe>
 					</IconTabFilter>
 				</items>
 			</IconTabBar>
