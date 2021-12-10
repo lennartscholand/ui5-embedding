@@ -16,12 +16,12 @@
 						key="sac">
 						<Button text="Press Me. I am a SAPUI5 Button"/>
       					<html:button>No, press me. I am native HTML Button.</html:button>
-						<html:iframe  src="https://conet-business.eu10.hcs.cloud.sap/sap/fpa/ui/tenants/f491c/bo/application/90ECA2F94038BB645CFA6163A14DD623?mode=present" height ="700px" width="100%"> </html:iframe>
+						<html:iframe src="https://conet-business.eu10.hcs.cloud.sap/sap/fpa/ui/tenants/f491c/bo/application/90ECA2F94038BB645CFA6163A14DD623?mode=present" height ="700px" width="100%"> </html:iframe>
 					</IconTabFilter>
 					<IconTabFilter
 						text="Lumira Embedding"
 						key="lumira">
-						<html:iframe  src="http://localhost:57592/aad/zen?APPLICATION=Embedding.lumx%21APPLICATION&PRELOAD_M_LIB=X&designersessionid=10360dc60ffc49ba8d4464c8774efee1" height ="700px" width="100%"> </html:iframe>
+						
 					</IconTabFilter>
 				</items>
 			</IconTabBar>
