@@ -11,6 +11,10 @@ sap.ui.define([
 		onInit: function () {
 			//Methode aussen oder innen?
 			window.addEventListener("message", receivePostMessage2, false);
+			
+			let searchParams = new URLSearchParams(window.location.search);
+			let urlParamter = searchParams.get('param1');
+			console.log(urlParamter);
 		},
 
 		receivePostMessage : function(event){

@@ -9,7 +9,8 @@ sap.ui.define([
 		formatter: formatter,
 
 		onInit: function () {
-
+			var urlParams = jQuery.sap.getUriParameters();
+			debugger;
 		}
 	});
 });
