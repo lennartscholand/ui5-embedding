@@ -10,15 +10,11 @@ sap.ui.define([
 
 		onInit: function () {
 			//Methode aussen oder innen?
-			window.addEventListener("message", receivePostMessage2, false);
+			window.addEventListener("message", receivePostMessage, false);
 
 			let searchParams = new URLSearchParams(window.location.search);
 			let urlParamter = searchParams.get('param1');
 			console.log(urlParamter);
-		},
-
-		receivePostMessage : function(event){
-			console.log(event);
 		},
 
 		sendPostMessage : function(){
@@ -32,7 +28,11 @@ sap.ui.define([
 		   
 	});
 
-	function receivePostMessage2(event){
+	function receivePostMessage(event){
 		console.log(event);
+		console.log(event.data);
+
+		let oText = sap.ui.getCore().byId("messageText");
+		oText.setText(event.data);
 	}
 });

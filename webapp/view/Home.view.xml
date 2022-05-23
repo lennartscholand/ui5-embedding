@@ -16,6 +16,7 @@
 						key="sac">
 						<Button text="Send Post Message to SAC" press="sendPostMessage"/>
 						<html:iframe  src="https://conet-business.eu10.hcs.cloud.sap/sap/fpa/ui/tenants/f491c/bo/application/90ECA2F94038BB645CFA6163A14DD623?mode=present" height ="700px" width="100%"> </html:iframe>
+						<Text id="messageText"/>
 					</IconTabFilter>
 					<IconTabFilter
 						text="Lumira Embedding"
