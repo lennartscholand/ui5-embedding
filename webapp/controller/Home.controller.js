@@ -38,7 +38,7 @@ sap.ui.define([
 		console.log(event);
 		console.log(event.data);
 
-		let oText = sap.ui.getCore().byId("messageText");
+		let oText = sap.ui.getCore().byId("container-sap.ui.demo.basicTemplate---home--messageText");
 		oText.setText(event.data);
 	}
 });
