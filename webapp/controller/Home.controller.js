@@ -24,6 +24,12 @@ sap.ui.define([
 
 		openURL : function(url) {
 			window.open(url, '_blank').focus();
+		},
+
+		onButtonPressed : function(){
+			let oIFrame = this.byId("saciframe");
+			var jsIFrame = document.getElementById("");
+			jsIFrame.src = "https://www.h-brs.de/de";
 		}
 		   
 	});
