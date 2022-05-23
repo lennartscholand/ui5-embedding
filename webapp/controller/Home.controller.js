@@ -37,8 +37,9 @@ sap.ui.define([
 	function receivePostMessage(event){
 		console.log(event);
 		console.log(event.data);
-
-		let oText = sap.ui.getCore().byId("container-sap.ui.demo.basicTemplate---home--messageText");
-		oText.setText(event.data);
+		if(!event.data.service){
+			let oText = sap.ui.getCore().byId("container-sap.ui.demo.basicTemplate---home--messageText");
+			oText.setText(event.data);
+		}	
 	}
 });
