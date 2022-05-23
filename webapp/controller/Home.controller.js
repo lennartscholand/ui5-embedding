@@ -37,7 +37,7 @@ sap.ui.define([
 	function receivePostMessage(event){
 		console.log(event);
 		console.log(event.data);
-		if(!event.data.service && (event.data == 'embed:ready')){
+		if(!event.data.service && !(event.data == 'embed:ready')){
 			let oText = sap.ui.getCore().byId("container-sap.ui.demo.basicTemplate---home--messageText");
 			oText.setText(event.data);
 		}	
